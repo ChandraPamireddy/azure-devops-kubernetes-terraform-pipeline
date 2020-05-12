@@ -10,16 +10,19 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-- stage: build
+- stage: Build
   jobs:
   - job: firstjob
     steps:
-    - bash:   echo build first job
-- stage: stagedeploy 
+    - bash: echo build first job
+  - job: secondjob
+    steps:
+    - bash: echo build second job
+- stage: devdeploy 
   jobs:
   - job: secondjob
     steps:
-    - bash:   echo build second job
+    - bash: echo build second job
 - stage: qadeploy
 - stage: prodeploy
 steps:
