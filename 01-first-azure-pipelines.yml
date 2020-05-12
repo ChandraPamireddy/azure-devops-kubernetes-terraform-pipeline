@@ -20,5 +20,5 @@ jobs:
     displayName: 'Run a multi-line script'
 - job: Job2
   steps:
-  - script: echo Hello, world-job-2----chandra!
-    displayName: 'Run a one-line script'
+  - script: echo job-2----chandra!
+    displayName: 'Run a one-line script'  
