@@ -25,7 +25,4 @@ stages:
     - bash: echo build second job
 - stage: qadeploy
 - stage: prodeploy
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
